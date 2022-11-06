@@ -5,6 +5,7 @@ const collegeName = document.getElementById("collegename");
 const fullName = document.getElementById("name");
 const gender = document.getElementById("gender");
 const courseYear = document.getElementById("courseyear");
+const successfullOverlay = document.getElementById("successfull-overlay");
 
 // ////////////
 form.addEventListener("submit", (e) => {
@@ -19,7 +20,11 @@ form.addEventListener("submit", (e) => {
     alert("enter full name");
     return;
   }
-  console.log('successfully submited');
+  successfullOverlay.style.display = "block";
+  setTimeout(() => {
+    successfullOverlay.style.display = "none";
+  }, 3000);
+  console.log("successfully submited");
 });
 
 const districtList = [];
