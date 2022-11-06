@@ -27,4 +27,20 @@ form.addEventListener("submit", (e) => {
   console.log("successfully submited");
 });
 
-const districtList = [];
+const districtList = [
+  "srikakulam",
+  "vizanagaram",
+  "visakhapatnam",
+  "E-godavari",
+  "kurnool",
+  "guntur",
+  "Nellore",
+  "chitoor",
+];
+
+district.innerHTML = districtList
+  .map((dis) => {
+    return `<option value= ${dis}>${dis}</option>
+    </select>`;
+  })
+  .join("");
