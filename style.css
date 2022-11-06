@@ -79,15 +79,17 @@ select {
 }
 .successfull-overlay {
   display: none;
-}
-#success_tic .page-body {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  max-width: 300px;
+  box-shadow: 0 250px  rgba(243, 243, 243, 0.987) ;
+}
+#success_tic .page-body {
+ 
+  /* max-width: 300px; */
+  width: 100%;
   background-color: #f4f4f4;
-  margin: 0 auto;
   padding: 2rem;
 }
 #success_tic .page-body .head {
