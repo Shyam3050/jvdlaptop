@@ -18,5 +18,41 @@
     </div>
   </div>
    <img src="./images/Amma-Vodi-Free-Laptop-Scheme.webp" alt="" width="100%" height="100%">
+
+   <div class="container">
+    
+    <form id="studentData">
+      <!-- district -->
+      <label for="district">Select District:</label>
+       <select name="district" id="district">
+        <option value selected="selcted">---select---</option>
+       </select>
+       <!-- college name -->
+       <label for="collegename">College Name:<span class="imp_star">*</span></label>
+       <input type="text" id="collegename" placeholder="Enter college Name">
+       <!-- Name -->
+       <label for="name">Full Name:<span class="imp_star">*</span></label>
+       <input type="text" id="name" placeholder="Enter Full Name">
+       <!-- gender -->
+       <label for="gender">Gender:</label>
+       <select name="gender" id="gender">
+        <option value="male">male</option>
+        <option value="female">female</option>
+       </select>
+       <!-- year -->
+       <label for="courseyear">CourseYear:</label>
+       <select name="courseyear" id="courseyear">
+        <option value="1">1-year</option>
+        <option value="2">2-year</option>
+        <option value="3">3-year</option>
+       </select>
+       <!-- ph no -->
+       <label for="number">Ph NO: <span class="imp_star">*</span></label>
+       <input type="number"  placeholder="Enter contact number" id="number">
+       <button type="submit" class="form_submit">Submit</button>
+    </form>
+   </div>
+   <!-- script file -->
+   <script src="/script.js"></script>
 </body>
 </html>
